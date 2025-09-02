@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main()
+
+{
+    char s[13];
+    printf("enter a string");
+    scanf("%[^\n]c",s);
+    printf(s);
+}

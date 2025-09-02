@@ -1,0 +1,14 @@
+print('enter the data under the attribute price\n')
+x=list(map(float,input().split()))
+print('enter the data under the attribute frequency:\n')
+f=list(map(float,input().split()))
+N=sum(f)
+cusum=0
+for i in range(len(x)):
+    cusum=cusum+f[i]
+    if cusum>N/2:
+        print('(i)The median price is=',int(x[i]))
+        break
+i=f.index(max(f))
+mode=x[i]
+print('(ii)the most common price per square feet is=',mode)
